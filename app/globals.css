@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer {
+  body {
+    @apply antialiased bg-neutral-900 text-zinc-300;
+  }
+}
