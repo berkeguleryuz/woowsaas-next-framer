@@ -6,7 +6,7 @@ type Props = {};
 
 const Nav = (props: Props) => {
   return (
-    <header className="sticky container mx-auto top-0 bg-neutral-900/50">
+    <header className="sticky z-40 container mx-auto top-0 bg-neutral-900/50">
       <div className="container">
         <div className="flex justify-between items-center h-24 md:h-28">
           <div>

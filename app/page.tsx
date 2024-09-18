@@ -1,3 +1,4 @@
+import FeaturesCards from "@/components/FeaturesCards";
 import Hero from "@/components/Hero";
 import Nav from "@/components/Nav";
 import Image from "next/image";
@@ -7,6 +8,7 @@ export default function Home() {
     <main>
       <Nav />
       <Hero />
+      <FeaturesCards />
     </main>
   );
 }

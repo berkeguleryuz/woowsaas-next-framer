@@ -23,8 +23,8 @@ const Hero = (props: Props) => {
         <div className="flex justify-center mt-10">
           <CutCurnerButton className="">Get Started</CutCurnerButton>
         </div>
-        <div className="flex justify-center">
-          <div className="inline-flex mt-24 relative z-0 ">
+        <div className="flex justify-center mt-24">
+          <div className="inline-flex  relative z-0 ">
             <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
               <Hexagon className="size-[1100px]" />
             </div>
@@ -80,6 +80,14 @@ const Hero = (props: Props) => {
               priority
             />
           </div>
+        </div>
+        <div className="flex justify-center flex-col items-center mt-40 md:mt-80 gap-4">
+          <div className="h-10 w-5 outline outline-[6px] outline-fuchsia-500/10 inline-flex justify-center pt-2 rounded-full">
+            <div className="h-3 w-1 bg-fuchsia-500 rounded-full"></div>
+          </div>
+          <p className="uppercase text-zinc-500 font-extrabold tracking-wider">
+            Scroll to learn more
+          </p>
         </div>
       </div>
     </section>
