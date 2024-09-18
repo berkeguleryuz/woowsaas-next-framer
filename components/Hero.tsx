@@ -2,6 +2,7 @@ import React from "react";
 import CutCurnerButton from "@/components/core/CutCurnerButton";
 import Image from "next/image";
 import Hexagon from "@/components/core/Hexagon";
+import Circle from "@/components/core/Circle";
 
 type Props = {};
 
@@ -31,7 +32,7 @@ const Hero = (props: Props) => {
               <Hexagon className="size-[1800px]" />
             </div>
             <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-              <div className="absolute bg-neutral-900 size-[240px] inline-flex items-center justify-center rounded-full outline outline-[6px] outline-fuchsia-500/10 -outline-offset-[6px] left-[200px] -top-[900px]">
+              <Circle className="absolute left-[200px] -top-[900px]">
                 <Image
                   src={"/cube.png"}
                   alt="cube 3D"
@@ -39,7 +40,29 @@ const Hero = (props: Props) => {
                   height={500}
                   className="size-[140px]"
                 />
-              </div>
+              </Circle>
+            </div>
+            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+              <Circle className="absolute left-[200px] top-[270px]">
+                <Image
+                  src={"/cuboid.png"}
+                  alt="cuboid 3D"
+                  width={500}
+                  height={500}
+                  className="size-[140px]"
+                />
+              </Circle>
+            </div>
+            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+              <Circle className="absolute -left-[600px] -top-[80px] ">
+                <Image
+                  src={"/torus.png"}
+                  alt="Torus 3D"
+                  width={500}
+                  height={500}
+                  className="size-[140px]"
+                />
+              </Circle>
             </div>
             <Image
               src={"/icosahedron.png"}
