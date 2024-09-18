@@ -12,7 +12,8 @@ const FeaturesCards = (props: Props) => {
           Discover the future of blockchain with Clodron
         </h2>
         <div>
-          <div>
+          <div className="z-0 relative">
+            <div className="absolute inset-0 bg-neutral-800 -z-10 rounded-2xl [mask-image:linear-gradient(225deg,transparent,transparent_40px,black_40px)]"></div>
             <Image
               src={"/pill.png"}
               alt="cube 3D"

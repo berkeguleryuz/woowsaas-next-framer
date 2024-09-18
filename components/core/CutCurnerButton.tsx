@@ -8,10 +8,10 @@ const CutCurnerButton = (props: ComponentPropsWithoutRef<"button">) => {
   return (
     <button
       className={clsx(
-        "bg-fuchsia-500/20 px-4 py-2 font-extrabold uppercase text-sm tracking-wide relative",
+        "bg-fuchsia-500/20 px-4 py-2 font-extrabold uppercase text-sm tracking-wide relative [mask-image:linear-gradient(225deg,transparent,transparent_7px,black_5px)]",
         className,
       )}>
-      <div className="absolute inset-0 outline outline-2 -outline-offset-2 outline- outline-fuchsia-500 [mask-image:linear-gradient(225deg,transparent,transparent_10px,black_10px)]"></div>
+      <div className="absolute inset-0 outline outline-2 -outline-offset-2 outline-inset outline-fuchsia-500 [mask-image:linear-gradient(225deg,transparent,transparent_10px,black_10px)] "></div>
       <svg
         width="24"
         className="absolute top-0 right-0 text-fuchsia-500"

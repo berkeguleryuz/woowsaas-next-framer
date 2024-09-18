@@ -9,7 +9,7 @@ const Nav = (props: Props) => {
     <header className="sticky z-40 container mx-auto top-0 bg-neutral-900/50">
       <div className="container">
         <div className="flex justify-between items-center h-24 md:h-28">
-          <div>
+          <div className="hover:scale-110 transition-all cursor-pointer">
             <Image src="/logo.png" alt="logo" width={77} height={77} />
           </div>
           <div className="flex gap-4 items-center">
