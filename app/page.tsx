@@ -1,7 +1,7 @@
 import FeaturesCards from "@/components/FeaturesCards";
+import FeaturesGrid from "@/components/FeaturesGrid";
 import Hero from "@/components/Hero";
 import Nav from "@/components/Nav";
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -9,6 +9,7 @@ export default function Home() {
       <Nav />
       <Hero />
       <FeaturesCards />
+      <FeaturesGrid />
     </main>
   );
 }
