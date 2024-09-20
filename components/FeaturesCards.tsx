@@ -2,7 +2,7 @@ import clsx from "clsx";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import React from "react";
-import { twMerge } from "tw-merge";
+import TextButton from "@/components/core/TextButton";
 
 type Props = {};
 
@@ -84,15 +84,7 @@ const FeaturesCards = (props: Props) => {
                 </h3>
                 <p className="text-sm text-zinc-400 mt-4">{description}</p>
                 <div className="flex justify-between mt-3">
-                  <button
-                    className={clsx(
-                      "text-sm font-sans font-extrabold tracking-wider text-fuchsia-500 uppercase",
-                      color === "lime" && "text-lime-500",
-                      color === "blue" && "text-blue-500",
-                      color === "orange" && "text-orange-500",
-                    )}>
-                    Learn More
-                  </button>
+                  <TextButton color={color}>Learn More</TextButton>
                   <ArrowRight className="size-8 cursor-pointer text-zinc-500 group-hover:text-zinc-300 transition-all duration-300 -translate-x-2 group-hover:translate-x-0" />
                 </div>
               </div>

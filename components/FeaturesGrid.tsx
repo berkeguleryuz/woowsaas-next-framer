@@ -1,5 +1,6 @@
 import React from "react";
-import CutCurnerButton from "./core/CutCurnerButton";
+import CutCurnerButton from "@/components/core/CutCurnerButton";
+import TextButton from "@/components/core/TextButton";
 
 type Props = {};
 
@@ -27,6 +28,7 @@ const FeaturesGrid = (props: Props) => {
         </ul>
         <div>
           <CutCurnerButton>Get Started</CutCurnerButton>
+          <TextButton>Learn More</TextButton>
         </div>
       </div>
     </section>
