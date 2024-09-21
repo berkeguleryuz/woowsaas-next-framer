@@ -18,7 +18,7 @@ const FeaturesGrid = (props: Props) => {
         <div className="flex flex-col gap-56">
           <div className="grid grid-cols-3">
             <div className="col-span-2">
-              <h2 className="font-serif font-black text-4xl">
+              <h2 className="font-serif font-black text-4xl md:text-5xl">
                 Building the future of blockchain
               </h2>
               <p className="text-xl text-zinc-400 mt-8">
@@ -40,8 +40,21 @@ const FeaturesGrid = (props: Props) => {
                 <TextButton>Learn More</TextButton>
               </div>
             </div>
-            <div>
-              <Image src={"/torus-knot.png"} alt="cube 3D" width={500} height={500} />
+            <div className="relative">
+              <Image
+                src={"/torus-knot.png"}
+                alt="cube 3D"
+                width={500}
+                className="size-96 max-w-none"
+                height={500}
+              />
+              <Image
+                src={"/hemisphere.png"}
+                alt="3D"
+                width={500}
+                height={500}
+                className="absolute size-96 top-3/4"
+              />
             </div>
           </div>
           <div>
