@@ -13,15 +13,15 @@ const listItems = [
 
 const FeaturesGrid = (props: Props) => {
   return (
-    <section className="py-24">
+    <section className="py-24 overflow-x-clip">
       <div className="container mx-auto">
-        <div className="flex flex-col gap-56">
-          <div className="grid grid-cols-3">
+        <div className="flex flex-col gap-56 md:gap-48 lg:gap-80">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="col-span-2">
-              <h2 className="font-serif font-black text-4xl md:text-5xl">
+              <h2 className="font-serif font-black text-4xl md:text-5xl lg:text-6xl">
                 Building the future of blockchain
               </h2>
-              <p className="text-xl text-zinc-400 mt-8">
+              <p className="text-xl lg:text-2xl text-zinc-400 mt-8">
                 Clodron provides different type of bots and solutions for your
                 next generation dApp or smart contract.
               </p>
@@ -40,42 +40,64 @@ const FeaturesGrid = (props: Props) => {
                 <TextButton>Learn More</TextButton>
               </div>
             </div>
-            <div className="relative">
-              <Image
-                src={"/torus-knot.png"}
-                alt="cube 3D"
-                width={500}
-                className="size-96 max-w-none"
-                height={500}
-              />
-              <Image
-                src={"/hemisphere.png"}
-                alt="3D"
-                width={500}
-                height={500}
-                className="absolute size-96 top-3/4"
-              />
+            <div className="hidden md:block">
+              <div className="relative inline-flex z-0">
+                <Image
+                  src={"/torus-knot.png"}
+                  alt="cube 3D"
+                  width={500}
+                  className="size-96 max-w-none"
+                  height={500}
+                />
+                <Image
+                  src={"/hemisphere.png"}
+                  alt="3D"
+                  width={500}
+                  height={500}
+                  className="absolute size-96 top-3/4 -z-10 scale-x-[-1]"
+                />
+              </div>
             </div>
           </div>
-          <div>
-            <h2 className="font-serif font-black text-4xl">
-              Clodron leading the way.
-            </h2>
-            <div className="flex flex-col text-xl text-zinc-400 mt-6 gap-6">
-              <p>
-                Dedicated to building the future of Web3 applications by
-                delivering the necessary solutions.
-              </p>
-              <p>
-                Leading to the the future of Web3. Web3 represents the next era
-                of the internet, offering a more secure, transparent, and
-                user-centric experience through decentralized platforms and
-                blockchain technology.
-              </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 right-0">
+            <div className="relative hidden md:block">
+              <div className="absolute right-0  ">
+                <Image
+                  src={"/cone.png"}
+                  alt="cone"
+                  width={555}
+                  height={555}
+                  className="size-96 max-w-none rotate-12"
+                />
+                <Image
+                  src={"/hemisphere.png"}
+                  alt="hemisphere"
+                  width={555}
+                  height={555}
+                  className="size-96 absolute top-3/4 -z-10 right-0 "
+                />
+              </div>
             </div>
-            <div className="flex gap-8 mt-12">
-              <CutCurnerButton>Get Started</CutCurnerButton>
-              <TextButton>Learn More</TextButton>
+            <div className="col-span-2">
+              <h2 className="font-serif font-black text-4xl md:text-5xl lg:text-6xl">
+                Clodron leading the way.
+              </h2>
+              <div className="flex flex-col text-xl lg:text-2xl text-zinc-400 mt-6 gap-6">
+                <p>
+                  Dedicated to building the future of Web3 applications by
+                  delivering the necessary solutions.
+                </p>
+                <p>
+                  Leading to the the future of Web3. Web3 represents the next
+                  era of the internet, offering a more secure, transparent, and
+                  user-centric experience through decentralized platforms and
+                  blockchain technology.
+                </p>
+              </div>
+              <div className="flex gap-8 mt-12">
+                <CutCurnerButton>Get Started</CutCurnerButton>
+                <TextButton>Learn More</TextButton>
+              </div>
             </div>
           </div>
         </div>
