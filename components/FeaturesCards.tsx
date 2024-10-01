@@ -3,6 +3,7 @@ import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 import TextButton from "@/components/core/TextButton";
+import Card from "@/components/core/Card";
 
 type Props = {};
 
@@ -47,25 +48,7 @@ const FeaturesCards = (props: Props) => {
         <div className="mt-36 lg:mt-48 flex">
           <div className="flex flex-none gap-8 ">
             {cardData.map(({ image, title, description, color }) => (
-              <div
-                className="z-0 relative p-8 md:p-10 max-w-xs md:max-w-md group cursor-pointer"
-                key={title}>
-                <div
-                  className={clsx(
-                    "absolute size-16 rounded-xl bg-fuchsia-500 top-1.5 right-1.5 -z-10 blur-lg opacity-0 group-hover:opacity-100 transition-all duration-300",
-                    color === "lime" && "bg-lime-500",
-                    color === "blue" && "bg-blue-500",
-                    color === "orange" && "bg-orange-500",
-                  )}></div>
-                <div
-                  className={clsx(
-                    `absolute size-16 rounded-xl bg-fuchsia-500 group-hover:bg-fuchsia-400 top-1.5 right-1.5 -z-10`,
-                    color === "lime" && "bg-lime-500 group-hover:bg-lime-400",
-                    color === "blue" && "bg-blue-500 group-hover:bg-blue-400",
-                    color === "orange" &&
-                      "bg-orange-500 group-hover:bg-orange-400",
-                  )}></div>
-                <div className="absolute inset-0 bg-neutral-800 -z-10 rounded-2xl [mask-image:linear-gradient(225deg,transparent,transparent_40px,black_40px)]"></div>
+              <Card key={title} color={color} className="max-w-xs md:max-w-md">
                 <div className="flex justify-center -mt-28">
                   <div className="inline-flex relative">
                     <div className="absolute h-4 w-full top-[calc(100%+16px)] bg-neutral-950/70 rounded-[100%] [mask-image:radial-gradient(closest-side,black,transparent)] group-hover:bg-neutral-950/30 transition-all duration-300"></div>
@@ -83,11 +66,7 @@ const FeaturesCards = (props: Props) => {
                   {title}
                 </h3>
                 <p className="text-sm text-zinc-400 mt-4">{description}</p>
-                <div className="flex justify-between mt-3">
-                  <TextButton color={color}>Learn More</TextButton>
-                  <ArrowRight className="size-8 cursor-pointer text-zinc-500 group-hover:text-zinc-300 transition-all duration-300 -translate-x-2 group-hover:translate-x-0" />
-                </div>
-              </div>
+              </Card>
             ))}
           </div>
         </div>
